@@ -12,10 +12,11 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  color: var(--terciary);
 }
 
 .header__notlogo--box {
-  color: black;
+  color: var(--terciary);
   text-align: center;
   padding: 0.8rem;
   text-decoration: none;
@@ -26,7 +27,6 @@
   justify-content: flex-end;
 }
 .header__notlogo--searchbox {
-  color: black;
   text-align: center;
   padding: 0.8rem;
   text-decoration: none;
@@ -36,19 +36,22 @@
   border-radius: 0.25rem;
   align-self: flex-end;
   justify-content: flex-end;
+  color: var(--terciary);
+  background-color: var(--secondary);
 }
 
 .header__notlogo--searchbox:hover{
   width: 80rem;
   transition: 1s;
+  background-color: var(--primaryhover);
 }
 
 .header__notlogo:hover {
-  color: black;
+  color: var(--terciary);
 }
 
 .header__logo {
-  color: black;
+  color: var(--terciary);
   font-size: 2.5rem;
   font-weight: bold;
   padding: 0.8rem;
@@ -68,7 +71,6 @@
 
 .header__notlogo--box:hover {
   background-color: var(--primaryhover);
-  color: #000000;
   transition: 0.2s;
 }
 
@@ -101,17 +103,19 @@ body {
   padding: 1rem;
   align-content: center;
   align-items: center;
+  color: var(--terciary);
 }
 .footer__data--link{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  color: black;
+  color: var(--terciary);
+  font-size: 1.2rem;
   text-decoration: None;
 }
 .footer__data--link:hover{
-  color: var(--terciary);
-  font-size: 1.05rem;
+  color: var(--primaryhover);
+  font-size: 1.4rem;
   transition: 0.3s;
 }
 
@@ -147,15 +151,17 @@ body {
 }
 
 .productos__text{
-  width: 60%;
+  width: 25%;
   font-size: 1.5rem;
   border-radius: 0.8rem;
-  background-color: var(--secondary);
+  background-color: var(--primary);
+  color: var(--terciary);
 }
 .productos__text:hover{
-  width: 65%;
+  width: 30%;
   font-size: 2rem;
-  transition: 0.5s
+  transition: 0.5s;
+  background-color: var(--primaryhover);
 }
 
 .productos__text--info{
