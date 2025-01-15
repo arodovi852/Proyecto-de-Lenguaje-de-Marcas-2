@@ -1,11 +1,12 @@
 :root {
-    --primary: #F4EBD9;
-    --secondary: #A39A92;
-    --terciary: #77685D;
+    --primary: #77685D;
+    --secondary: #8e8177;
+    --terciary: #c1b7a9;
+    --primaryhover: #615145;
 }
 .header {
   overflow: hidden;
-  background-color: #3a3131;
+  background-color: var(--primary);
   padding: 1.2rem 0.7rem;
   display: flex;
   flex-direction: row;
@@ -13,7 +14,7 @@
   align-items: center;
 }
 
-.header a:not(a.logo) {
+.header__notlogo--box {
   color: black;
   text-align: center;
   padding: 0.8rem;
@@ -24,15 +25,34 @@
   align-self: flex-end;
   justify-content: flex-end;
 }
-.header a:not(a.logo):hover {
+.header__notlogo--searchbox {
+  color: black;
+  text-align: center;
+  padding: 0.8rem;
+  text-decoration: none;
+  font-size: 1.1rem;
+  line-height: 2rem;
+  width: 15rem;
+  border-radius: 0.25rem;
+  align-self: flex-end;
+  justify-content: flex-end;
+}
+
+.header__notlogo--searchbox:hover{
+  width: 75rem;
+  transition: 1s;
+}
+
+.header__notlogo:hover {
   color: black;
 }
 
-.header a.logo {
+.header__logo {
   color: black;
   font-size: 2.5rem;
   font-weight: bold;
   padding: 0.8rem;
+
   text-decoration: none;
   line-height: 2rem;
   border-radius: 0.25rem;
@@ -43,8 +63,8 @@
   font-family: "Arial Black", sans-serif;
 }
 
-.header a:hover:not(a.logo) {
-  background-color: #251f1f;
+.header__notlogo--box:hover {
+  background-color: var(--primaryhover);
   color: #000000;
   transition: 0.2s;
 }
@@ -56,14 +76,14 @@
 
 body {
   margin: 0;
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   font-size: 0.95rem;
-  background-color: #8f8282;
+  background-color: var(--terciary);
   text-align: center;
 }
 
 .footer{
-  background-color: #393333;
+  background-color: var(--secondary);
   padding: 1rem 0.5rem;
   position: absolute;
   left: 0;
@@ -85,7 +105,7 @@ body {
   text-decoration: None;
 }
 .footer_link:hover{
-  color: #959595;
+  color: var(--terciary);
   font-size: 1.05rem;
   transition: 0.3s;
 }
