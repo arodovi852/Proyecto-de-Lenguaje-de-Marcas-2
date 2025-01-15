@@ -43,7 +43,6 @@
 .header__notlogo--searchbox:hover{
   width: 80rem;
   transition: 1s;
-  background-color: var(--primaryhover);
 }
 
 .header__notlogo:hover {
