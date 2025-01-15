@@ -39,7 +39,7 @@
 }
 
 .header__notlogo--searchbox:hover{
-  width: 75rem;
+  width: 80rem;
   transition: 1s;
 }
 
@@ -52,7 +52,6 @@
   font-size: 2.5rem;
   font-weight: bold;
   padding: 0.8rem;
-
   text-decoration: none;
   line-height: 2rem;
   border-radius: 0.25rem;
@@ -61,6 +60,10 @@
   align-self: flex-start;
   align-items: flex-start;
   font-family: "Arial Black", sans-serif;
+}
+.header__logo:hover{
+  font-size: 2.75rem;
+  transition: 0.5s
 }
 
 .header__notlogo--box:hover {
@@ -85,27 +88,77 @@ body {
 .footer{
   background-color: var(--secondary);
   padding: 1rem 0.5rem;
-  position: absolute;
+  position: relative;
   left: 0;
   bottom: 0;
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   min-height: 2rem;
 }
-.footer_data{
+.footer__data{
   padding: 1rem;
   align-content: center;
   align-items: center;
 }
-.footer_link{
+.footer__data--link{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   color: black;
   text-decoration: None;
 }
-.footer_link:hover{
+.footer__data--link:hover{
   color: var(--terciary);
   font-size: 1.05rem;
   transition: 0.3s;
+}
+
+.productos{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 2rem;
+  justify-content: center;
+
+}
+
+.productos__image{
+}
+.productos__image:hover{
+  transition: 0.5s;
+}
+.productos__image--photo{
+  height: 80%;
+  width: 80%;
+  border-radius: 0.8rem;
+  background-color: var(--primary);
+  padding: 0.4rem;
+}
+.productos__image--photo:hover{
+  height: 96%;
+  width: 96%;
+  transition: 0.5s
+}
+.productos__image--link{
+  align-self: center;
+
+}
+
+.productos__text{
+  width: 60%;
+  font-size: 1.5rem;
+  border-radius: 0.8rem;
+  background-color: var(--secondary);
+}
+.productos__text:hover{
+  width: 65%;
+  font-size: 2rem;
+  transition: 0.5s
+}
+
+.productos__text--info{
+  height: 100%;
+  width: 100%
 }
