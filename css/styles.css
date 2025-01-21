@@ -36,8 +36,8 @@
   border-radius: 0.25rem;
   align-self: flex-end;
   justify-content: flex-end;
-  color: var(--terciary);
-  background-color: var(--secondary);
+  background-color: var(--terciary);
+  color: var(--primary);
 }
 
 .header__notlogo--searchbox:hover{
@@ -117,7 +117,18 @@ body {
   font-size: 1.4rem;
   transition: 0.3s;
 }
-
+.cuerpo{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  color: var(--terciary);
+}
+.cuerpo__izquierda{
+  width: 15%;
+}
+.cuerpo__derecha{
+  width: 85%;
+}
 .productos{
   display: flex;
   flex-wrap: wrap;
@@ -166,4 +177,40 @@ body {
 .productos__text--info{
   height: 100%;
   width: 100%
+}
+
+.filtro{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: var(--secondary);
+  border-radius: 0.8rem;
+}
+.filtro__texto{
+  font-size: 1.3rem;
+}
+.filtro__precio{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.filtro__precio--min{
+  width: 3rem;
+  padding: 1rem;
+  background-color: var(--terciary);
+  color: var(--primary);
+  border-radius: 0.8rem;
+}
+.filtro__precio--max{
+  width: 3rem;
+  padding: 1rem;
+  background-color: var(--terciary);
+  color: var(--primary);
+  border-radius: 0.8rem;
+}
+
+.filtro__checkboxes--check{
+  display: flex;
+  flex-wrap: wrap;
 }
