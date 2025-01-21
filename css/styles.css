@@ -118,6 +118,10 @@ body {
   transition: 0.3s;
 }
 
+.cuerpo_princial{
+  padding: 2rem;
+}
+
 .ofertas{
   display: flex;
   flex-wrap: wrap;
@@ -127,7 +131,7 @@ body {
   border-radius: 0.8rem;
   padding: 1rem;
   font-size: 2rem;
-  background-color: var(--secondary);
+  background-color: var(--primary);
 }
 .ofertas:hover{
   width: 45%;
@@ -176,11 +180,10 @@ body {
   font-size: 1.6rem;
   padding: 1.1rem;
   transition: 0.5s;
-
 }
 
-.recomendaciones{
 
+.recomendaciones{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -309,4 +312,28 @@ body {
 .filtro__checkboxes--check{
   display: flex;
   flex-wrap: wrap;
+}
+.caja{
+  border-radius: 0.8rem;
+  background-color: var(--secondary);
+  width: 40%;
+  height: 90%;
+  padding: 2rem;
+  justify-content: space-around;
+  justify-self: center;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+.caja__texto{
+  border-radius: 0.8rem;
+  background-color: var(--primary);
+  padding: 2rem;
+  color: var(--terciary)
+}
+.caja__imagen{
+}
+.caja__imagen--contenido{
+  border-radius: 0.8rem;
 }
