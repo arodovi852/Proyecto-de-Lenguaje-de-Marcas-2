@@ -149,7 +149,7 @@ body {
   width: 30%;
   border-radius: 0.8rem;
   padding: 1rem;
-  font-size: 2rem;
+  font-size: 1.2rem;
   background-color: var(--primary);
   overflow: hidden;
   position: relative;
@@ -164,7 +164,7 @@ body {
   width: 35%;
   padding: 2.75rem;
   transition: 0.8s;
-  font-size: 2.5rem;
+  font-size: 1.75rem;
 }
 .ofertas__link{
   color: var(--terciary);
@@ -343,7 +343,7 @@ body {
   align-items: center;
   padding: 2rem;
   justify-content: center;
-
+  color: var(--primary)
 }
 
 .productos__image{
@@ -370,22 +370,23 @@ body {
 
 .productos__text{
   width: 25%;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   border-radius: 0.8rem;
   background-color: var(--primary);
   color: var(--terciary);
 }
 .productos__text:hover{
   width: 30%;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   transition: 0.5s;
   background-color: var(--primaryhover);
 }
 
 .productos__text--info{
   height: 100%;
-  width: 100%
+  width: 100%;
 }
+.productos__text--info{}
 
 .filtro{
   display: flex;
@@ -393,6 +394,7 @@ body {
   flex-direction: column;
   padding: 1rem;
   background-color: var(--secondary);
+  color: var(--terciary);
   border-radius: 0.8rem;
   width: 20rem;
 }
@@ -588,7 +590,9 @@ body {
   .header__notlogo--searchbox:hover{
     width: 20rem;
   }
-
+  .recomendaciones{
+    width: 20rem
+  }
 }
 @media (max-width: 1060px){
   .lanzamientos{
@@ -596,6 +600,9 @@ body {
   }
   .lanzamientos__seccion--texto{
     width: 12rem
+  }
+  .lanzamientos__seccion--texto:hover{
+    width: 14rem
   }
   .ofertas{
     width: 21rem
