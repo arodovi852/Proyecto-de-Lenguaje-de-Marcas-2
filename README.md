@@ -135,7 +135,7 @@ https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/0d3e9f10d4dd
 https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/0d3e9f10d4dd0076a3153318144213abc7f04ad5/css/styles.css#L350-L401
 
 
-De esta forma, toda esta estructura eso se vería así:
+De esta forma, toda esta estructura se vería así:
 https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/0d3e9f10d4dd0076a3153318144213abc7f04ad5/productos.html#L18-L80
 
 
@@ -151,7 +151,7 @@ https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/0d3e9f10d4dd
 https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/0d3e9f10d4dd0076a3153318144213abc7f04ad5/css/styles.css#L525-L588
 Además, aquí se utilizan 2 tipos de etiquetas form únicas: email y password.
 Email solo acepta cadenas de caracteres que terminen en un formato de email válido, mientras que password no mostrará por pantalla
-la cadena de caracteres
+la cadena de caracteres.
 
 Más adelante se encuentran el conjunto de cajas, cuya estructura es bastante simple:
 https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/0d3e9f10d4dd0076a3153318144213abc7f04ad5/provisional.html#L34-L53
