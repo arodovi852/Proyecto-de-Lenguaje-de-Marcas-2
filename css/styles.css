@@ -229,7 +229,7 @@ body {
   height: 18.75rem
 }
 .seccion__imagenes--contenido:hover{
-  rotate: 2deg;
+  transform: rotate(2deg);
   transition: 0.2s;
 }
 
@@ -279,7 +279,7 @@ body {
   height: 18.75rem
 }
 .sugerencias_seccion__imagenes--contenido:hover{
-  rotate: 2deg;
+  transform: rotate(2deg);
   transition: 0.2s;
 }
 
