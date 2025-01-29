@@ -1,4 +1,4 @@
-# Proyecto-de-Lenguaje-de-Marcas-2
+# Proyecto-de-Lenguaje-de-Marcas: CDShop
 
 Para este proyecto decidí hacer una página web de venta de CDs, la cual llamé CDShop.
 
@@ -62,7 +62,7 @@ rellenar acerca del problema en cuestión.
 ![img_14.png](assets/img_14.png)
 
 ---
-
+## Explicación del proyecto
 En términos de distribución, todas las páginas fueron estructuradas en HTML y todos los estilos fueron incluidos en 
 una única página de CSS. Aquí se utilizaron las variables para facilitar el cambio de los colores y mantener una
 mejor organización.
