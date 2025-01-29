@@ -48,7 +48,7 @@
 }
 
 .header__notlogo--searchbox:hover{
-  width: 80rem;
+  width: 50rem;
   transition: 1s;
 }
 
@@ -561,4 +561,29 @@ body {
   0% {background-color: var(--primary)}
   33% {background-color: var(--secondary)}
   66% {background-color: var(--primary)}
+}
+
+@media (max-width: 1400px){
+  .header__notlogo--searchbox:hover{
+    width: 20rem;
+  }
+}
+@media (max-width: 1060px){
+  .lanzamientos{
+    flex-direction: row;
+  }
+  .lanzamientos__seccion--texto{
+    width: 12rem
+  }
+  .ofertas{
+    width: 21rem
+  }
+}
+@media (max-width: 820px){
+  .header{
+    flex-direction: column;
+  }
+  .header__notlogo{
+    flex-direction: column;
+  }
 }
