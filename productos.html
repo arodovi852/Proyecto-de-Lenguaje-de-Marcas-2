@@ -1,27 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
   <title>CDShop</title>
-    <section class="header">
-        <a href="principal.html" class="header__logo">CDShop</a>
-        <section class="header__notlogo">
-            <input type="text" class="header__notlogo--searchbox" placeholder="Busca...">
-            <a href="productos.html" class="header__notlogo--box">Productos</a>
-            <a href="provisional.html" class="header__notlogo--box">Login</a>
-            <a href="contacto.html" class="header__notlogo--box">Contacto</a>
-        </section>
-    </section>
 </head>
-
 <body>
-
-    <section class="ofertas">
-        <a href="productos.html" class="ofertas__link">Ofertas de hasta el 50%</a>
-    </section>
+    <header class="header">
+            <a href="principal.html" class="header__logo"><h1>CDShop</h1></a>
+            <section class="header__notlogo">
+                <input type="text" class="header__notlogo--searchbox" placeholder="Search...">
+                <a href="productos.html" class="header__notlogo--box"><h2>Productos</h2></a>
+                <a href="provisional.html" class="header__notlogo--box"><h2>Login</h2></a>
+                <a href="contacto.html" class="header__notlogo--box"><h2>Contacto</h2></a>
+            </section>
+    </header>
     <section class="cuerpo">
         <section class="cuerpo__izquierda">
             <section class="filtro">
@@ -33,34 +25,20 @@
                 </article>
                 <p class="filtro__texto">Ordenar por:</p>
                 <article class="filtro__checkboxes">
-                    <section class="filtro__checkboxes--check">
-                        <input type="checkbox">
-                        <p class="">Relevancia</p>
-                    </section>
-                    <section class="filtro__checkboxes--check">
-                        <input type="checkbox">
-                        <p class="">Precio (más bajo)</p>
-                    </section>
-                    <section class="filtro__checkboxes--check">
-                        <input type="checkbox">
-                        <p class="">Precio (más alto)</p>
-                    </section>
-                    <section class="filtro__checkboxes--check">
-                        <input type="checkbox">
-                        <p class="">Reseñas</p>
-                    </section>
-                    <section class="filtro__checkboxes--check">
-                        <input type="checkbox">
-                        <p class="">Artista</p>
-                    </section>
-                    <section class="filtro__checkboxes--check">
-                        <input type="checkbox">
-                        <p class="">Orden alfabético (A-Z)</p>
-                    </section>
-                    <section class="filtro__checkboxes--check">
-                        <input type="checkbox">
-                        <p class="">Género</p>
-                    </section>
+                    <input type="radio" id="caso1" name="filtro" value="" class="filtro__checkboxes--check">
+                    <label for="caso1"> Relevancia </label><br>
+                    <input type="radio" id="caso2" name="filtro" value="" class="filtro__checkboxes--check">
+                    <label for="caso2"> Precio (más bajo)</label><br>
+                    <input type="radio" id="caso3" name="filtro" value="" class="filtro__checkboxes--check">
+                    <label for="caso3"> Precio (más alto)</label><br>
+                    <input type="radio" id="caso4" name="filtro" value="" class="filtro__checkboxes--check">
+                    <label for="caso4"> Reseñas </label><br>
+                    <input type="radio" id="caso5" name="filtro" value="" class="filtro__checkboxes--check">
+                    <label for="caso5"> Artista</label><br>
+                    <input type="radio" id="caso6" name="filtro" value="" class="filtro__checkboxes--check">
+                    <label for="caso6"> Orden (A-Z)</label><br>
+                    <input type="radio" id="caso7" name="filtro" value="" class="filtro__checkboxes--check">
+                    <label for="caso7"> Género musical</label>
                 </article>
             </section>
         </section>

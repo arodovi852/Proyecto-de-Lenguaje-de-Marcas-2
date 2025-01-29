@@ -3,42 +3,76 @@
 <head>
     <link rel="stylesheet" href="css/styles.css">
   <title>CDShop</title>
-    <section class="header">
-        <a href="principal.html" class="header__logo">CDShop</a>
-        <section class="header__notlogo">
-            <input type="text" class="header__notlogo--searchbox" placeholder="Search...">
-            <a href="productos.html" class="header__notlogo--box">Productos</a>
-            <a href="provisional.html" class="header__notlogo--box">Login</L></a>
-            <a href="contacto.html" class="header__notlogo--box">Contacto</a>
-        </section>
-    </section>
 </head>
 <body>
+    <header class="header">
+            <a href="principal.html" class="header__logo"><h1>CDShop</h1></a>
+            <section class="header__notlogo">
+                <input type="text" class="header__notlogo--searchbox" placeholder="Search...">
+                <a href="productos.html" class="header__notlogo--box"><h2>Productos</h2></a>
+                <a href="provisional.html" class="header__notlogo--box"><h2>Login</h2></a>
+                <a href="contacto.html" class="header__notlogo--box"><h2>Contacto</h2></a>
+            </section>
+    </header>
 
+    <section class="contacto_superior">
+        <h1 class="contacto_superior__texto">Contacta con nosotros</h1>
+        <p class="contacto_superior__texto">Si tienes alguna pregunta contacta con nosotros mediante uno de nuestros contactos
+            o mediante el fomulario abajo.</p>
+    </section>
+    <section class="info_contacto">
+        <section class="info_contacto__caja">
+            <h1>Albumes ausentes</h1>
+            <p>Algunos albumes pueden ser retirados por falta de stock o por discontinuidad</p>
+        </section>
+        <section class="info_contacto__caja">
+            <h1></h1>
+            <h1>Albumes ausentes</h1>
+            <p>Algunos albumes pueden ser retirados por falta de stock o por discontinuidad</p>
+        </section>
+        <section class="info_contacto__caja">
+            <h1></h1>
+            <h1>Albumes ausentes</h1>
+            <p>Algunos albumes pueden ser retirados por falta de stock o por discontinuidad</p>
+        </section>
+    </section>
     <section class="caja">
         <section class="caja__texto">
-            <p>Nombre</p>
-            <input type="text" class="caja__texto--searchbox" placeholder="Search...">
-            <p>Email de contacto</p>
-            <input type="text" class="caja__texto--searchbox" placeholder="Search...">
-            <p>Comentario o mensaje</p>
-            <input type="text" class="caja__texto--searchbox" placeholder="Search...">
-            <input type="submit">
-        </section>
-        <section class="caja__imagen">
-            <img src="assets/Deftones-selftitled_albumcover.png" class="caja__imagen--contenido"/>
+            <form>
+                <p>Nombre:</p>
+                <input type="text" class="caja__texto--searchbox" placeholder="Nombre...">
+                <p>Email:</p>
+                <input type="email" class="caja__texto--searchbox" placeholder="Correo...">
+                <p>Fecha de consulta:</p>
+                <input type="date" class="caja__texto--searchbox" placeholder="Search...">
+                <p>Motivo de contacto:</p>
+                <input type="checkbox" id="caso1" name="" value="">
+                  <label for="caso1"> Ha habido un problema con el pedido </label><br>
+                  <input type="checkbox" id="caso2" name="" value="">
+                  <label for="caso2"> Se ha retirado un producto de la tienda</label><br>
+                  <input type="checkbox" id="caso3" name="" value="">
+                  <label for="caso3"> Otro:</label>
+                    <input type="text" class="caja__texto--searchbox" placeholder="Search...">
+                <p>Comentario sobre la consulta:</p>
+                <input type="text" class="caja__texto--searchbox" placeholder="Search...">
+                <p>Notificaciones adicionales:</p>
+                <input type="radio" class="caja__texto--searchbox" id="notificaciones1">
+                <label for="notificaciones1"> Deseo recibir notificaciones sobre nuevos lanzamientos</label><br>
+                <input type="radio" class="caja__texto--searchbox" id="notificaciones2">
+                <label for="notificaciones2">No deseo recibir notificaciones"</label><br>
+                <input type="submit">
+            </form>
+
+
         </section>
     </section>
     <footer class="footer">
         <article class="footer__data">
-            <h1>Redes sociales</h1>
-            <a href="#" class="footer__data--link">Twitter</a>
-            <a href="#" class="footer__data--link">Instagram</a>
-        </article>
-        <article class="footer__data">
-            <h1>Info</h1>
-            <a href="#" class="footer__data--link">Gmail</a>
-            <a href="contacto.html" class="footer__data--link">Contacto</a>
+            <img src="assets/2491px-Logo_of_Twitter.svg.png" class= "footer__data--icon"/>
+            <img src="assets/5968776.png" class= "footer__data--icon"/>
+            <img src="assets/free-youtube-logo-icon-download.png" class= "footer__data--icon"/>
+            <img src="assets/tiktok-logo-tikok-icon-transpare.png" class= "footer__data--icon"/>
+            <img src="assets/pENh3y_2Pnw.png" class= "footer__data--icon"/>
         </article>
     </footer>
 </body>
