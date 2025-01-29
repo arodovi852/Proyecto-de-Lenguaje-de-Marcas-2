@@ -153,6 +153,8 @@ Además, aquí se utilizan 2 tipos de etiquetas form únicas: email y password.
 Email solo acepta cadenas de caracteres que terminen en un formato de email válido, mientras que password no mostrará por pantalla
 la cadena de caracteres.
 
+![img_15.png](assets/img_15.png)
+
 Más adelante se encuentran el conjunto de cajas, cuya estructura es bastante simple:
 https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/0d3e9f10d4dd0076a3153318144213abc7f04ad5/provisional.html#L34-L53
 https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/0d3e9f10d4dd0076a3153318144213abc7f04ad5/css/styles.css#L589-L595
@@ -184,8 +186,10 @@ Aquí se utilizan checkboxes, radios, date, text, reset, submit.
 
 Las radios se han explicado previamente, y las checkboxes funcionan como estas pero permite escoger múltiples a la vez.
 
-Los text permiten al usuario introducir texto, mientras que las date solo aceptan fechas
+Los text permiten al usuario introducir texto, mientras que las date solo aceptan fechas.
 
 Y para terminar, reset sirve para reiniciar y eliminar la información del formulario mientras que submit permite al usuario enviar su respuesta.
 
+Por último, se implementaron media queries que hacen el diseño más responsive:
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/0d3e9f10d4dd0076a3153318144213abc7f04ad5/css/styles.css#L669-L716
 
