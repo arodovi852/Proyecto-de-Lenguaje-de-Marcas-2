@@ -16,41 +16,40 @@
     </header>
 
     <section class="contacto_superior">
-        <h1 class="contacto_superior__texto">Contacta con nosotros</h1>
+        <h2 class="contacto_superior__texto">Contacta con nosotros</h2>
         <p class="contacto_superior__texto">Si tienes alguna pregunta contacta con nosotros mediante uno de nuestros contactos
             o mediante el fomulario abajo.</p>
     </section>
-    <section class="info_contacto">
+    <div class="info_contacto">
         <section class="info_contacto__caja">
-            <h1>Albumes ausentes</h1>
+            <h2>Albumes ausentes</h2>
             <p>Algunos albumes pueden ser retirados por falta de stock o por discontinuidad</p>
         </section>
         <section class="info_contacto__caja">
-            <h1></h1>
-            <h1>Problemas con el pedido</h1>
+            <h2>Problemas con el pedido</h2>
             <p>Puede haber habido problemas enviando el pedido por nuestra parte o por parte la agencia de paquete</p>
         </section>
         <section class="info_contacto__caja">
-            <h1></h1>
-            <h1>Preguntas frecuentes</h1>
+            <h2>Preguntas frecuentes</h2>
             <p>Cuente con nosotros para responder cualquier duda que pueda tener</p>
         </section>
-    </section>
-    <section class="caja_contacto">
+    </div>
+    <div class="caja_contacto">
         <section class="caja__texto">
+            <h2>Formulario de contacto</h2>
             <form>
                 <p>Nombre:</p>
                 <input type="text" class="caja__texto--searchbox" placeholder="Nombre...">
                 <p>Email:</p>
                 <input type="email" class="caja__texto--searchbox" placeholder="Correo...">
                 <p>Fecha de consulta:</p>
-                <input type="date" class="caja__texto--searchbox" placeholder="Search...">
+                <input type="date" class="caja__texto--searchbox">
                 <p>Motivo de contacto:</p>
-                <input type="checkbox" id="caso1" name="" value="">
+                <input type="checkbox" id="caso1" name="problema">
                   <label for="caso1"> Ha habido un problema con el pedido </label><br>
-                  <input type="checkbox" id="caso2" name="" value="">
+                  <input type="checkbox" id="caso2" name="problema">
                   <label for="caso2"> Se ha retirado un producto de la tienda</label><br>
-                  <input type="checkbox" id="caso3" name="" value="">
+                  <input type="checkbox" id="caso3" name="problema">
                   <label for="caso3"> Tengo una duda acerca del sitio web</label>
                 <p>Comentario sobre la consulta:</p>
                 <input type="text" class="caja__texto--searchbox" placeholder="Search...">
@@ -66,14 +65,17 @@
 
 
         </section>
-    </section>
+    </div>
     <footer class="footer">
         <article class="footer__data">
-            <img src="assets/2491px-Logo_of_Twitter.svg.png" class= "footer__data--icon"/>
-            <img src="assets/5968776.png" class= "footer__data--icon"/>
-            <img src="assets/free-youtube-logo-icon-download.png" class= "footer__data--icon"/>
-            <img src="assets/tiktok-logo-tikok-icon-transpare.png" class= "footer__data--icon"/>
-            <img src="assets/pENh3y_2Pnw.png" class= "footer__data--icon"/>
+            <h2>Redes sociales</h2>
+            <a href="#" class="footer__data--link">Twitter</a>
+            <a href="#" class="footer__data--link">Instagram</a>
+        </article>
+        <article class="footer__data">
+            <h2>Info</h2>
+            <a href="#" class="footer__data--link">Gmail</a>
+            <a href="contacto.html" class="footer__data--link">Contacto</a>
         </article>
     </footer>
 </body>
