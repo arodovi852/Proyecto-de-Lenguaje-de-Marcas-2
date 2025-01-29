@@ -36,19 +36,33 @@ rellenar acerca del problema en cuestión
 ---
 
 En términos de distribución, todas las páginas fueron estructuradas en HTML y todos los estilos fueron incluidos en 
-una única página de css. Aquí se utilizaron las variables para facilitar el cambio de los colores y mantener una
-mejor organización
-![img.png](assets/img.png)
+una única página de CSS. Aquí se utilizaron las variables para facilitar el cambio de los colores y mantener una
+mejor organización.
 
-Todas las páginas están dividas en 3 sección distintas, de forma que hay un total de 12 secciones. 
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/0d3e9f10d4dd0076a3153318144213abc7f04ad5/css/styles.css#L1-L12
 
-La primera sección se trata de la animación de la oferta. 
+Todas las páginas están dividas en 3 sección distintas, de forma que hay un total de 12 secciones, además del header y footer.
 
-![img_1.png](assets/img_1.png)
+La cabecera se compone del propio logo junto con una barra de búsqueda y las diversas páginas. Su estructura HTML es la siguiente:
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/0d3e9f10d4dd0076a3153318144213abc7f04ad5/contacto.html#L8-L17
+En cambio, su CSS es este:
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/0d3e9f10d4dd0076a3153318144213abc7f04ad5/css/styles.css#L16-L109
+Aquí podemos destacar varias cosas, más específicamente la barra de búsqueda, ya que esta está animada con un hover para que se extienda al pasar
+el ratón por encima:
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/0d3e9f10d4dd0076a3153318144213abc7f04ad5/css/styles.css#L50-L67
+
+En cambio, el footer es mucho más simple:
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/0d3e9f10d4dd0076a3153318144213abc7f04ad5/contacto.html#L68-L79
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/0d3e9f10d4dd0076a3153318144213abc7f04ad5/css/styles.css#L121-L164
+Está dividido en dos partes, una con redes sociales y otra con las formas de contactar a la empresa.
+
+Pero pasando a las propias secciones en sí, la primera sección se trata de la animación de la oferta:
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/0d3e9f10d4dd0076a3153318144213abc7f04ad5/principal.html#L18-L20
 
 Su estructura HTML es bastante simple, sin embargo cabe destacar la animación de su CSS:
 
-![img_2.png](assets/img_2.png)
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/0d3e9f10d4dd0076a3153318144213abc7f04ad5/css/styles.css#L167-L206
+
 Aquí, el rectángulo se mueve desde la derecha y va cambiando de color intermitentemente.
 
 
@@ -67,61 +81,75 @@ recurso.
 
 Es por esto que se utilizan diversos divs a lo largo de la estructura HTML, puesto que muchas de las 
 imágenes requerían ser agrupadas dentro de una etiqueta, pero no había forma de introducir un heading coherente,
-por lo que se utilizó divs en múltiples ocasiones. Dicho esto, esta es la estructura HTML:
+por lo que se utilizó divs en múltiples ocasiones. Dicho esto, esta es la estructura HTML junto con su CSS:
 
-![img_3.png](assets/img_3.png)
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/0d3e9f10d4dd0076a3153318144213abc7f04ad5/principal.html#L21-L39
+
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/0d3e9f10d4dd0076a3153318144213abc7f04ad5/css/styles.css#L208-L257
 
 Como se puede comprobar, solo se usan divs en situaciones donde se deben agrupar imágenes sin texto alguno. 
 
 Continuando por la sección inferior, las recomendaciones simplemente están conformadas por una sección con un enlace a la creación de cuenta:
 
-![img_4.png](assets/img_4.png)
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/0d3e9f10d4dd0076a3153318144213abc7f04ad5/principal.html#L40-L43
+
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/0d3e9f10d4dd0076a3153318144213abc7f04ad5/css/styles.css#L259-L293
 
 En términos de la página de productos, la página está dividida en dos: La parte izquierda y la parte derecha. Esto se debe al filtro, ya
 que este está al mismo nivel que los productos y ocupa un porcentaje de la pantalla.
 En la parte izquierda se encuentra el filtro, donde se utilizó forms de tipo radio para poder escoger únicamente una entre todas las opciones
 de ordenación, incluso si solo está maquetado y no funcione realmente.
-Por otro lado, la parte derecha está conformada por los productos, donde se encuentra tanto la imagen del disco como su descripción.
-De esta forma, toda esta estructura eso se vería así:
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/0d3e9f10d4dd0076a3153318144213abc7f04ad5/productos.html#L19-L45
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/0d3e9f10d4dd0076a3153318144213abc7f04ad5/css/styles.css#L309-L349
 
-![img_5.png](assets/img_5.png)
-![img_6.png](assets/img_6.png)
+Por otro lado, la parte derecha está conformada por los productos, donde se encuentra tanto la imagen del disco como su descripción.
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/0d3e9f10d4dd0076a3153318144213abc7f04ad5/productos.html#L46-L80
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/0d3e9f10d4dd0076a3153318144213abc7f04ad5/css/styles.css#L350-L401
+
+
+De esta forma, toda esta estructura eso se vería así:
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/0d3e9f10d4dd0076a3153318144213abc7f04ad5/productos.html#L18-L80
+
 
 Para terminar con esta página llegamos a la sección de sugerencias, donde todo está dividido en varias secciones.
-
-![img_7.png](assets/img_7.png)
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/0d3e9f10d4dd0076a3153318144213abc7f04ad5/productos.html#L81-L97
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/0d3e9f10d4dd0076a3153318144213abc7f04ad5/css/styles.css#L402-L452
 
 Siguiendo por la página del login, aquí se pueden ver estructuras más complejas, como la primera, donde hay un formulario junto 
 a una foto todo dentro de una misma caja. De esta forma, esta página tiene la siguiente estructura, siempre respetando el uso apropiado de
 las etiquetas adecuadas para no caer en la trampa de usar únicamente divs genéricos:
 
-![img_8.png](assets/img_8.png)
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/0d3e9f10d4dd0076a3153318144213abc7f04ad5/provisional.html#L18-L33
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/0d3e9f10d4dd0076a3153318144213abc7f04ad5/css/styles.css#L525-L588
 
 Más adelante se encuentran el conjunto de cajas, cuya estructura es bastante simple:
-
-![img_9.png](assets/img_9.png)
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/0d3e9f10d4dd0076a3153318144213abc7f04ad5/provisional.html#L34-L53
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/0d3e9f10d4dd0076a3153318144213abc7f04ad5/css/styles.css#L589-L595
 
 Para terminar con esta página tenemos la sección de abajo que, como la animación en la página de bienvenida, esta se mueve de un lado de la pantalla
 a otro, usando la misma animación pero bajo un contexto distinto. 
-
-![img_10.png](assets/img_10.png)
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/0d3e9f10d4dd0076a3153318144213abc7f04ad5/css/styles.css#L598-L643
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/0d3e9f10d4dd0076a3153318144213abc7f04ad5/provisional.html#L54-L59
 
 Además, esta se frena en seco al poner el ratón encima, ya que es más
 difícil de darle debido a su pequeño tamaño. Esto es posible gracias a la siguiente línea de código:
 
-![img_11.png](assets/img_11.png)
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/0d3e9f10d4dd0076a3153318144213abc7f04ad5/css/styles.css#L616-L618
 
 Por último tenemos la página de contacto, donde recibe al usuario con una parte superior introductoria que ocupa toda la pantalla.
 Su estrucura es la siguiente:
-
-![img_12.png](assets/img_12.png)
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/0d3e9f10d4dd0076a3153318144213abc7f04ad5/contacto.html#L19-L23
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/0d3e9f10d4dd0076a3153318144213abc7f04ad5/css/styles.css#L455-L463
 
 Luego está el conjunto de motivos para contactar con la empresa, dividida en 3 cajas que contienen texto.
-
-![img_13.png](assets/img_13.png)
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/0d3e9f10d4dd0076a3153318144213abc7f04ad5/contacto.html#L24-L37
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/0d3e9f10d4dd0076a3153318144213abc7f04ad5/css/styles.css#L465-L480
 
 Por último está el formulario, donde caben destacar algunas etiquetas.
-Aquí se utilizan checkboxes, radios, date, text, reset, submit
+Esta es la estructura:
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/0d3e9f10d4dd0076a3153318144213abc7f04ad5/contacto.html#L38-L67
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/0d3e9f10d4dd0076a3153318144213abc7f04ad5/css/styles.css#L481-L520
+Aquí se utilizan checkboxes, radios, date, text, reset, submit.
 
 Las radios se han explicado previamente, y las checkboxes funcionan como estas pero permite escoger múltiples a la vez.
 
@@ -129,6 +157,4 @@ Los text permiten al usuario introducir texto, mientras que las date solo acepta
 
 Y para terminar, reset sirve para reiniciar y eliminar la información del formulario mientras que submit permite al usuario enviar su respuesta.
 
-Esta es la estructura:
 
-![img_14.png](assets/img_14.png)
