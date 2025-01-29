@@ -467,7 +467,7 @@ body {
   display: flex;
   flex-direction: row;
   margin-bottom: 2rem;
-  width: 45%
+  width: 53rem
 }
 .caja_contacto{
   border-radius: 2rem;
@@ -513,8 +513,8 @@ body {
 .caja__imagen--contenido{
   border-radius: 0.8rem;
 
-  height: 25rem;
-  width: 37.5rem
+  height: 100%;
+  width: 100%
 }
 
 
@@ -561,6 +561,24 @@ body {
   0% {background-color: var(--primary)}
   33% {background-color: var(--secondary)}
   66% {background-color: var(--primary)}
+}
+
+
+@media (max-width: 1550px){
+  .caja{
+    flex-direction: column;
+  }
+  .info_login {
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  .info_contacto__caja{
+    width: 20rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
 }
 
 @media (max-width: 1400px){
