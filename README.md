@@ -39,7 +39,43 @@ En términos de distribución, todas las páginas fueron estructuradas en HTML y
 una única página de css. Aquí se utilizaron las variables para facilitar el cambio de los colores y mantener una
 mejor organización
 ![img.png](img.png)
-Todas las páginas están dividas en 3 sección distintas, de forma que hay un total de 12 secciones.
-1) La primera sección se trata de la animación de la oferta. 
+Todas las páginas están dividas en 3 sección distintas, de forma que hay un total de 12 secciones. 
+
+La primera sección se trata de la animación de la oferta. 
 ![img_1.png](img_1.png)
-Su estructura HTML es bastante simple, sin embargo su CSS es donde 
+Su estructura HTML es bastante simple, sin embargo cabe destacar la animación de su CSS:
+![img_2.png](img_2.png)
+Aquí, el rectángulo se mueve desde la derecha y va cambiando de color intermitentemente.
+
+La siguiente sección se trata de los lanzamientos, donde cabe destacar una cosa importante acerca del proyecto:
+El uso de etiquetas. Todas las etiquetas tienen un propósito, y es por esto que cabe destacar la diferencia entre las
+etiquetas utilizadas para agrupar contenido.
+
+Para agrupar distintas etiquetas y contenido, pueden utilizarse sections, articles y divs.
+
+Los sections se utilizan para agrupar contenido relacionado entre sí, mientras que los articles pueden funcionar
+por su propia cuenta sin necesitar información externa.
+
+Sin embargo, los sections y articles requieren del uso de headings con jerarquía. Es por esto que cuando es
+necesario agrupar contenido y no cabe la posibilidad de introducir un heading se deberá usar un div como último
+recurso.
+
+Es por esto que se utilizan diversos divs a lo largo de la estructura HTML, puesto que muchas de las 
+imágenes requerían ser agrupadas dentro de una etiqueta, pero no había forma de introducir un heading coherente,
+por lo que se utilizó divs en múltiples ocasiones. Dicho esto, esta es la estructura HTML:
+![img_3.png](img_3.png)
+
+Como se puede comprobar, solo se usan divs en situaciones donde se deben agrupar imágenes sin texto alguno. 
+
+Continuando por la sección inferior, las recomendaciones simplemente están conformadas por una sección con un enlace a la creación de cuenta:
+![img_4.png](img_4.png)
+
+En términos de la página de productos, la página está dividida en dos: La parte izquierda y la parte derecha. Esto se debe al filtro, ya
+que este está al mismo nivel que los productos y ocupa un porcentaje de la pantalla.
+En la parte izquierda se encuentra el filtro, donde se utilizó forms de tipo radio para poder escoger únicamente una entre todas las opciones
+de ordenación, incluso si solo está maquetado y no funcione realmente.
+Por otro lado, la
+
+De esta forma, toda esta estructura eso se vería así:
+![img_5.png](img_5.png)
+![img_6.png](img_6.png)

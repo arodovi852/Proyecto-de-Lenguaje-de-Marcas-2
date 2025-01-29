@@ -130,6 +130,7 @@ body {
   justify-content: space-around;
   align-items: center;
   min-height: 2rem;
+  overflow: hidden;
 }
 .footer__data{
   padding: 1rem;
