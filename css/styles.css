@@ -540,6 +540,9 @@ body {
 
   animation-play-state: paused
 }
+.interesante__grupo{
+  color: var(--primary)
+}
 .interesante__link--imagen{
   padding: 0.5rem;
   border-radius: 0.8rem;
