@@ -614,7 +614,6 @@ body {
   animation: move 10s linear infinite;
 }
 .interesante:hover{
-
   animation-play-state: paused
 }
 .interesante__grupo{

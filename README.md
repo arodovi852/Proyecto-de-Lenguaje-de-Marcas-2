@@ -74,8 +74,43 @@ En términos de la página de productos, la página está dividida en dos: La pa
 que este está al mismo nivel que los productos y ocupa un porcentaje de la pantalla.
 En la parte izquierda se encuentra el filtro, donde se utilizó forms de tipo radio para poder escoger únicamente una entre todas las opciones
 de ordenación, incluso si solo está maquetado y no funcione realmente.
-Por otro lado, la
-
+Por otro lado, la parte derecha está conformada por los productos, donde se encuentra tanto la imagen del disco como su descripción.
 De esta forma, toda esta estructura eso se vería así:
 ![img_5.png](img_5.png)
 ![img_6.png](img_6.png)
+Para terminar con esta página llegamos a la sección de sugerencias, donde todo está dividido en varias secciones.
+![img_7.png](img_7.png)
+
+Siguiendo por la página del login, aquí se pueden ver estructuras más complejas, como la primera, donde hay un formulario junto 
+a una foto todo dentro de una misma caja. De esta forma, esta página tiene la siguiente estructura, siempre respetando el uso apropiado de
+las etiquetas adecuadas para no caer en la trampa de usar únicamente divs genéricos:
+![img_8.png](img_8.png)
+
+Más adelante se encuentran el conjunto de cajas, cuya estructura es bastante simple:
+![img_9.png](img_9.png)
+
+Para terminar con esta página tenemos la sección de abajo que, como la animación en la página de bienvenida, esta se mueve de un lado de la pantalla
+a otro, usando la misma animación pero bajo un contexto distino. 
+![img_10.png](img_10.png)
+Además, esta se frena en seco al poner el ratón encima, ya que es más
+difícil de darle debido a su pequeño tamaño. Esto es posible gracias a la siguiente línea de código:
+![img_11.png](img_11.png)
+
+Por último tenemos la página de contacto, donde recibe al usuario con una parte superior introductoria que ocupa toda la pantalla.
+Su estrucura es la siguiente:
+![img_12.png](img_12.png)
+
+Luego está el conjunto de motivos para contactar con la empresa, dividida en 3 cajas que contienen texto.
+![img_13.png](img_13.png)
+
+Por último está el formulario, donde caben destacar algunas etiquetas.
+Aquí se utilizan checkboxes, radios, date, text, reset, submit
+
+Las radios se han explicado previamente, y las checkboxes funcionan como estas pero permite escoger múltiples a la vez.
+
+Los text permiten al usuario introducir texto, mientras que las date solo aceptan fechas
+
+Y para terminar, reset sirve para reiniciar y eliminar la información del formulario mientras que submit permite al usuario enviar su respuesta.
+
+Esta es la estructura:
+![img_14.png](img_14.png)
