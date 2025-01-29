@@ -439,7 +439,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-content: center;
-  padding: 3rem;
+  padding: 1rem;
 }
 .info_contacto__caja{
   width: 20%;
@@ -592,6 +592,9 @@ body {
   }
   .recomendaciones{
     width: 20rem
+  }
+  .caja_contacto{
+    width: 20rem;
   }
 }
 @media (max-width: 1060px){
