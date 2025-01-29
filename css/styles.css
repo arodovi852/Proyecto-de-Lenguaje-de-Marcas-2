@@ -5,7 +5,13 @@
     --primaryhover: #615145;
     --font: "Arial Black", sans-serif;
     --secondfont: "Helvetica Neue", sans-serif;
+    --darkprimary: #534942;
+    --darksecondary: #605650;
+    --darkterciary: #857f6c;
+    --darkprimaryhover: #42372f;
+
 }
+
 
 .header {
   overflow: hidden;
