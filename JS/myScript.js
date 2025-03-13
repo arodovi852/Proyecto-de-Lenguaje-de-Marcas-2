@@ -36,29 +36,3 @@ function quitarLinksDelMain() {
 //Eliminar las sugerencias
 const recomendaciones = document.querySelector(".recomendaciones")
 recomendaciones.remove()
-// - Añadir
-
-
-// - Estilo
-
-
-/*
-function cambiarDisponibilidadDelProducto(){
-    const productos = document.querySelector(".productos")
-    const disponibilidad = document.createElement("p");
-    disponibilidad.textContent = "Fuera de Stock";
-    const productos_text = productos.lastElementChild;
-    const productos_text_info = productos_text.lastElementChild;
-    productos_text.replaceChild(disponibilidad, productos_text_info);
-}
-    --primary: #77685D;
-    --secondary: #8e8177;
-    --terciary: #c1b7a9;
-    --primaryhover: #615145;
-    --font: "Arial Black", sans-serif;
-    --secondfont: "Helvetica Neue", sans-serif;
-    --darkprimary: #534942;
-    --darksecondary: #605650;
-    --darkterciary: #857f6c;
-    --darkprimaryhover: #42372f;
-*/

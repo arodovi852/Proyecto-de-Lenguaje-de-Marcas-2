@@ -8,17 +8,19 @@ function quitarLinksDelMain() {
     lanzamientos.replaceChild(textoSinLink, lanzamientosLink);
 }
 
-//Eliminar las sugerencias
-function eliminarSugerencias(){
+//Eliminar el login para las sugerencias
+function eliminarRecomendacion(){
 const recomendaciones = document.querySelector(".recomendaciones")
 recomendaciones.remove()
 
 }
+//Eliminar las recomendaciones debido a que es un usuario nuevo
 function eliminarIntereses(){
     const lanzamientos2 = document.querySelector(".lanzamientos").lastElementChild
     lanzamientos2.remove()
 }
 
+//Cambio del footer para acomodar la pantalla más pequeña
 function cambiarPosicionFooter(){
     const footer = document.querySelector(".footer")
     footer.style.position = "fixed"
@@ -26,6 +28,6 @@ function cambiarPosicionFooter(){
 }
 
 quitarLinksDelMain()
-eliminarSugerencias()
+eliminarRecomendacion()
 eliminarIntereses()
 cambiarPosicionFooter()
