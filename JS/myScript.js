@@ -1,14 +1,14 @@
 
 
 //Código final
-//Borra las ofertas
+//Borra las ofertas - Borrar
 function borrarOfertas(){
     const ofertas = document.querySelector(".ofertas")
     ofertas.remove()
     const interesante = document.querySelector(".interesante")
     interesante.remove()
 }
-//Cambia el precio de uno de los productos por "Fuera de Stock", en este caso el primer álbum
+//Cambia el precio de uno de los productos por "Fuera de Stock", en este caso el primer álbum - Modificar y añadir
 function cambiarDisponibilidadDelProducto(){
     const productos = document.querySelector(".productos")
     const disponibilidad = document.createElement("p");
@@ -17,25 +17,29 @@ function cambiarDisponibilidadDelProducto(){
     const productos_text_info = productos_text.lastElementChild;
     productos_text.replaceChild(disponibilidad, productos_text_info);
 }
-//Quita animaciones
-function quitarLinksyAnimacionesDelMain() {
+//Quita links
+function quitarLinksDelMain() {
     const lanzamientos = document.querySelector(".lanzamientos__seccion");
     const lanzamientosLink = document.querySelector(".lanzamientos__seccion--texto");
     const textoSinLink = document.createElement("h3")
-    textoSinLink.textContent = "Fuera de Stock";
+    textoSinLink.textContent = "Lanzamientos populares";
     textoSinLink.className = "lanzamientos__seccion--texto"
-    lanzamientos.replaceChild(textoSinLink, lanzamientosLink);
-    const lanzamientos2 = document.querySelector(".lanzamientos.lastElementChild");
-    const lanzamientosLink2 = document.querySelector(lanzamientos2);
+    lanzamientos.replaceChild(textoSinLink, lanzamientosLink)
+    const lanzamientos2 = document.querySelector(".lanzamientos__seccion").lastElementChild;
+    const lazamientosLink2 = document.querySelector(".lanzamientos__seccion--texto");
     const textoSinLink2 = document.createElement("h3")
-    textoSinLink.textContent = "Fuera de Stock";
+    textoSinLink.textContent = "Lanzamientos recientes";
     textoSinLink.className = "lanzamientos__seccion--texto"
-    lanzamientos.replaceChild(textoSinLink2, lanzamientosLink2);
+    lanzamientos.replaceChild(textoSinLink2, lanzamientosLink2)
 }
-//
 
-const lista = element.classList
-list.add("")
+//Eliminar las sugerencias
+const recomendaciones = document.querySelector(".recomendaciones")
+recomendaciones.remove()
+// - Añadir
+
+
+// - Estilo
 
 
 /*

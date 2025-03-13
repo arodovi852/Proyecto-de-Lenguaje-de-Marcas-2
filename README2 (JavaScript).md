@@ -27,5 +27,9 @@ Y, finalmente, JavaScript permite el trabajo en conjunto con HTML y CSS que perm
 y su sintaxis flexible orientada objeto le da acceso a muchas funcionalidades.
 
 # Explicación del código
+La primera función implementada fue la de la eliminación de ofertas, utilizando .querySelector() para escogerlas y .remove() para eliminarlas
 
+La segunda función es cambiarDisponibilidadDelProducto(), donde por motivos hipotéticos de falta de stock uno de los productos dejó de estar disponible, por lo que se
+cambia el precio de la descripción por "Fuera de stock" gracias 
 
+Y como el usuario aún no ha comprado nada, se ha eliminado la sección de sugerencias gracias a la siguiente función, eliminarSugerencias() 
