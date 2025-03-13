@@ -25,7 +25,3 @@ muchas características nuevas como las variables let, const, las clases, las ar
 
 Y, finalmente, JavaScript permite el trabajo en conjunto con HTML y CSS que permite darle mayor profundidad a las páginas web
 y su sintaxis flexible orientada objeto le da acceso a muchas funcionalidades.
-
-# Explicación del código
-
-
