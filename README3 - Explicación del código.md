@@ -98,4 +98,28 @@ https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/8b9b6c60e561
 
 ## Carrito
 
+Por último, para crear un flujo libre del proyecto, se creó un carrito de la compra que utilizara LocalStorage, donde se pueden guardar y eliminar los nuevos productos, así como vaciar el carrito entero:
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/d246c88f3ce85e23f7bd31ad65b52714e0273b4b/JS/carrito.js#L1-L53
 
+Esta línea de código al principio permite recuperar carritos de sesiones anteriores:
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/d246c88f3ce85e23f7bd31ad65b52714e0273b4b/JS/carrito.js#L1
+
+
+Ahora tenemos el siguiente trozo de código, donde se buscan los botones btn-agregar-carrito y se le añade un event listener, donde se toman los atributos para añadirlos a un array y guardarlo en LocalStorage,
+mostrando un mensaje por cada producto agregado:
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/d246c88f3ce85e23f7bd31ad65b52714e0273b4b/JS/carrito.js#L6-L18
+
+Dentro de la función de actualizar el carrito, este borra su contenido primero:
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/d246c88f3ce85e23f7bd31ad65b52714e0273b4b/JS/carrito.js#L20-L24
+
+Después, crea una lista con nombre y precio, crea un botón para eliminarlo y ambos se añaden al contenedor del carrito:
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/d246c88f3ce85e23f7bd31ad65b52714e0273b4b/JS/carrito.js#L26-L39
+
+También se añadió esta parte del código para mostrar el precio total del carrito, principalmente para una mayor accesibilidad:
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/d246c88f3ce85e23f7bd31ad65b52714e0273b4b/JS/carrito.js#L41-L42
+
+Sin embargo, también está la función para eliminar elementos singulares del carrito, que los elimina del array carrito y actualiza el LocalStorage con los cambios:
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/d246c88f3ce85e23f7bd31ad65b52714e0273b4b/JS/carrito.js#L44-L48
+
+Por último, también existe la opción de borrar el carrito entero, donde se elimina todo del LocalStorage:
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/d246c88f3ce85e23f7bd31ad65b52714e0273b4b/JS/carrito.js#L49-L53
