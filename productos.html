@@ -17,30 +17,30 @@
     </header>
     <div class="cuerpo">
         <div class="cuerpo__izquierda">
-            <section class="filtro">
-                <h3 class="filtro__texto">Precio</h3>
+            <section id="filtros" class="filtro">
+                <h3 class="filtro__texto">Filtrar por precio</h3>
+
                 <section class="filtro__precio">
-                    <input type="text" class="filtro__precio--min" placeholder="Min">
-                    <h4>hasta</h4>
-                    <input type="text" class="filtro__precio--max" placeholder="Max">
+                    <label>Min: <input type="number" id="precio-min" class="filtro__precio--numero" placeholder="0"></label>
+                    <label>Max: <input type="number" id="precio-max" class="filtro__precio--numero" placeholder="100"></label>
                 </section>
                 <section class="filtro__checkboxes">
-                    <h4 class="filtro__texto">Ordenar por:</h4>
-                    <input type="radio" id="caso1" name="filtro" value="" class="filtro__checkboxes--check">
-                    <label for="caso1"> Relevancia </label><br>
-                    <input type="radio" id="caso2" name="filtro" value="" class="filtro__checkboxes--check">
-                    <label for="caso2"> Precio (+ bajo)</label><br>
-                    <input type="radio" id="caso3" name="filtro" value="" class="filtro__checkboxes--check">
-                    <label for="caso3"> Precio (+ alto)</label><br>
-                    <input type="radio" id="caso4" name="filtro" value="" class="filtro__checkboxes--check">
-                    <label for="caso4"> Valoraciones </label><br>
-                    <input type="radio" id="caso5" name="filtro" value="" class="filtro__checkboxes--check">
-                    <label for="caso5"> Artista</label><br>
-                    <input type="radio" id="caso6" name="filtro" value="" class="filtro__checkboxes--check">
-                    <label for="caso6"> Orden (A-Z)</label><br>
-                    <input type="radio" id="caso7" name="filtro" value="" class="filtro__checkboxes--check">
-                    <label for="caso7"> Estilo musical</label>
+                <h3 class="filtro__texto">Ordenar por</h3>
+                    <select id="ordenar-por" class="ordenar-por">
+                        <option value="relevancia">Relevancia</option>
+                        <option value="precio-asc">Precio (menor a mayor)</option>
+                        <option value="precio-desc">Precio (mayor a menor)</option>
+                        <option value="artista">Artista</option>
+                        <option value="alfabetico">Nombre A-Z</option>
+                        <option value="genero">Estilo musical</option>
+                    </select>
                 </section>
+            </section>
+            <section class="filtro">
+                <h2>Carrito</h2>
+                <ul id="carrito-contenido"></ul>
+                <p id="carrito-total">Total: 0 $</p>
+                <button id="vaciar-carrito" class="vaciar-carrito">Vaciar carrito</button>
             </section>
         </div>
         <div class="cuerpo__derecha">
@@ -49,10 +49,11 @@
                     <a href="productos.html" class="productos__image--link"><img src="assets/Deftones_-_White_Pony-greycovera.png" alt="Deftones - White Pony"
                                                                                  class="productos__image--photo"></a>
                 </div>
-                <section class="productos__text">
+                <section class="productos__text" data-precio="12.99" data-nombre="White Pony" data-artista="Deftones" data-genero="Metal Alternativo" data-relevancia="1">
                     <h3 class="productos__text--info">Deftones - White Pony</h3>
                     <p class="productos__text--info">Genero: Metal alternativo</p>
                     <p class="productos__text--info">Precio: 12.99$</p>
+                    <button class="btn-agregar-carrito" data-nombre="Deftones - White Pony" data-precio="12.99">Agregar al carrito</button>
                 </section>
             </div>
             <div class="productos">
@@ -60,20 +61,22 @@
                     <a href="productos.html" class="productos__image--link"><img src="assets/Deftones_-_Diamond_Eyes.png"
                                                                                  alt="Deftones - Diamond Eyes" class="productos__image--photo"></a>
                 </div>
-                <section class="productos__text">
+                <section class="productos__text" data-precio="13.99" data-nombre="Diamond Eyes" data-artista="Deftones" data-genero="Metal Alternativo" data-relevancia="2">
                     <h3 class="productos__text--info">Deftones - Diamond Eyes</h3>
                     <p class="productos__text--info">Genero: Metal alternativo</p>
-                    <p class="productos__text--info">Precio: 12.99$</p>
+                    <p class="productos__text--info">Precio: 13.99$</p>
+                    <button class="btn-agregar-carrito" data-nombre="Deftones - Diamond Eyes" data-precio="13.99">Agregar al carrito</button>
                 </section>
             </div>
             <div class="productos">
                 <div class="productos__image">
                     <a href="productos.html" class="productos__image--link"><img src="assets/Deftones-selftitled_albumcover.png" alt="Deftones - Deftones" class="productos__image--photo"></a>
                 </div>
-                <section class="productos__text">
+                <section class="productos__text" data-precio="11.99" data-nombre="Deftones" data-artista="Deftones" data-genero="Metal" data-relevancia="3">
                     <h3 class="productos__text--info">Deftones - Deftones</h3>
-                    <p class="productos__text--info">Genero: Metal alternativo</p>
-                    <p class="productos__text--info">Precio: 12.99$</p>
+                    <p class="productos__text--info">Genero: Metal</p>
+                    <p class="productos__text--info">Precio: 11.99$</p>
+                    <button class="btn-agregar-carrito" data-nombre="Deftones - Deftones" data-precio="11.99">Agregar al carrito</button>
                 </section>
             </div>
         </div>
@@ -86,6 +89,7 @@
                     <a href="productos.html"><img src="assets/Linkin_Park_Meteora_Album_Cover.png" class="sugerencias_seccion__imagenes--contenido" alt="Meteora"></a>
                     <a href="productos.html"><img src="assets/Minutes_to_Midnight_cover.png" alt="Minutes to Midnight"
                         class="sugerencias_seccion__imagenes--contenido"></a>
+
                 </div>
                 <div class="sugerencias__sugerencias_seccion--imagenes">
                     <a href="productos.html"><img src="assets/Paramore_-_All_We_Know_Is_Fallin.png" class="sugerencias_seccion__imagenes--contenido" alt="All we know is falling"></a>
@@ -107,7 +111,9 @@
             <a href="contacto.html" class="footer__data--link">Contacto</a>
         </article>
     </footer>
-
     <!--<script type="text/javascript" src="JS/cambiarDisponibilidadDelProductor.js" ></script>-->
+
+    <script src="JS/filtros.js"></script>
+    <script src="JS/carrito.js"></script>
 </body>
 </html>

@@ -7,4 +7,5 @@ function cambiarDisponibilidadDelProducto(){
     productos_text.replaceChild(disponibilidad, productos_text_info);
 }
 
+
 cambiarDisponibilidadDelProducto();

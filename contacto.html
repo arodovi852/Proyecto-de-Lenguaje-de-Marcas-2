@@ -40,9 +40,10 @@
             <h2>Formulario de contacto</h2>
             <form>
                 <p>Nombre:</p>
-                <input type="text" class="caja_contacto__texto--searchbox" placeholder="Nombre">
+                <input type="text" class="caja_contacto__texto--searchbox" placeholder="Nombre" required>
                 <p>Email:</p>
-                <input type="email" class="caja_contacto__texto--searchbox" placeholder="Correo">
+                <span id="email-error" class="mensaje-error"></span>
+                <input type="email" class="caja_contacto__texto--searchbox" placeholder="Correo" required>
                 <p>Fecha de consulta:</p>
                 <input type="date" class="caja_contacto__texto--searchbox">
                 <p>Motivo de contacto:</p>
@@ -65,6 +66,7 @@
             </form>
         </section>
     </div>
+
     <footer class="footer">
         <article class="footer__data">
             <h2>Redes sociales</h2>
@@ -77,5 +79,6 @@
             <a href="contacto.html" class="footer__data--link">Contacto</a>
         </article>
     </footer>
+<script src="JS/formulario.js"></script>
 </body>
 </html>
