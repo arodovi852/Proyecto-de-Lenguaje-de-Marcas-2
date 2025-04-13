@@ -32,7 +32,30 @@ https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/3afb03ca6484
 
 ## Formulario
 
+En este archivo se tomó el formulario creado en la sección de contacto para hacer que, en caso de que el usuario introduzca un correo erróneo, le aparezca por pantalla
+el error inmediatamente al salir.
 
+El código se ve así:
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/f91dad5ef66ff25af9c1564c86553b95c7bb3842/JS/formulario.js#L1-L27
+
+Ahora bien, estas dos primeras líneas almacenan los datos a utilizar, más en concreto el formulario y el input del email para la comprobación más adelante:
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/f91dad5ef66ff25af9c1564c86553b95c7bb3842/JS/formulario.js#L2-L3
+
+Luego, este evento blur ocurre cuando el usuario hace clic fuera del input de email, por lo que esto es lo que permitirá mostrar el mensaje de error:
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/f91dad5ef66ff25af9c1564c86553b95c7bb3842/JS/formulario.js#L5
+
+Ahora bien, el siguiente código elimina espacios en blanco por el usuario en caso de que accidentalmente haya añadido alguno, y usa una expresión regular para la comprobación
+de que el email es correcto (que tuve que buscar por internet):
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/f91dad5ef66ff25af9c1564c86553b95c7bb3842/JS/formulario.js#L6-L14
+
+Esto de aquí impide que el formulario se envíe antes de tiempo:
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/f91dad5ef66ff25af9c1564c86553b95c7bb3842/JS/formulario.js#L18-L19
+
+Estas líneas muestran un error en caso de que se envíe el formulario con un correo incorrecto:
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/f91dad5ef66ff25af9c1564c86553b95c7bb3842/JS/formulario.js#L20-L22
+
+Pero si el formulario es correcto, se mostrará un mensaje diciendo que se envió correctamente y se vaciarán los campos:
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/f91dad5ef66ff25af9c1564c86553b95c7bb3842/JS/formulario.js#L24-L25
 
 ## Filtros
 
