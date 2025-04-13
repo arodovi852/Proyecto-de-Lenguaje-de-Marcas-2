@@ -2,7 +2,33 @@
 
 ## Galería
 
-Se añadió una galería de fotos donde se pueden añadir y eliminar imágenes dinámicamente.
+Para la galería, se añadió una galería de fotos donde se pueden añadir y eliminar imágenes dinámicamente. Esto fue una tarea ardua ya que, debido a la falta de algo parecido en el código,
+esta tuvo que ser creada de 0, sin embargo la decisión final fue introducirla en la sección principal como si de una sección de "sugerencias" se tratase, aunque no tenga ese propósito como tal.
+
+Este es el código completo:
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/3afb03ca64845b96d68d9a4b143a7ae75276a4fd/JS/galeria.js#L1-L20
+
+Primero, se crearon constantes para el contenedor donde se almacenan las imágenes y para el archivo a introducir:
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/3afb03ca64845b96d68d9a4b143a7ae75276a4fd/JS/galeria.js#L2-L3
+
+Luego, esta línea de código se dispara cuando el usuario selecciona un archivo:
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/3afb03ca64845b96d68d9a4b143a7ae75276a4fd/JS/galeria.js#L5
+
+Esto de aquí evita que se suban archivos que no sean imágenes como archivos de texto y por ello evitar errores:
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/3afb03ca64845b96d68d9a4b143a7ae75276a4fd/JS/galeria.js#L6-L7
+
+Finalmente, este código permite cargar la imagen en la página web.
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/3afb03ca64845b96d68d9a4b143a7ae75276a4fd/JS/galeria.js#L8-L17
+
+Cabe destacar que encontré la solución de utilizar FileReader por internet, donde FileReader es una API de JavaScript que convierte archivos locales en datos utilizables por la web:
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/3afb03ca64845b96d68d9a4b143a7ae75276a4fd/JS/galeria.js#L8
+
+reader.readAsDataURL() convierte la imagen a una URL base64 para poder usarla como src de una etiqueta <img> :
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/3afb03ca64845b96d68d9a4b143a7ae75276a4fd/JS/galeria.js#L17
+
+Finalmente, en el onload() se crea una etiqueta <img>, se le asigna el contenido cargado como imagen, le da una clase CSS para implementar estilos visuales, la agrega al contenedor de la galería
+y yo personalmente he decidido añadirle un evento para eliminarla al presionar click sobre ella para simplificar la subida y eliminación de imágenes:
+https://github.com/arodovi852/Proyecto-de-Lenguaje-de-Marcas-2/blob/3afb03ca64845b96d68d9a4b143a7ae75276a4fd/JS/galeria.js#L9-L15
 
 ## Formulario
 
